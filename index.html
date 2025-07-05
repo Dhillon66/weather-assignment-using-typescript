@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calgary Weather Forecast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="weather-widget">
+    <h1>Calgary 7-Day Weather</h1>
+    <div id="main-card" class="main-card">
+      <h2>Loading...</h2>
+    </div>
+    <button id="toggleBtn" onclick="toggleUnit()">Switch to °F</button>
+    <div class="card-row">
+      <button onclick="showDay(0)" class="small-card" id="card0"></button>
+      <button onclick="showDay(1)" class="small-card" id="card1"></button>
+      <button onclick="showDay(2)" class="small-card" id="card2"></button>
+      <button onclick="showDay(3)" class="small-card" id="card3"></button>
+      <button onclick="showDay(4)" class="small-card" id="card4"></button>
+      <button onclick="showDay(5)" class="small-card" id="card5"></button>
+      <button onclick="showDay(6)" class="small-card" id="card6"></button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
